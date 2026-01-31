@@ -3,11 +3,10 @@ import { StatusBar } from "expo-status-bar";
 import { Image, Text, View } from "react-native";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { SafeAreaView } from "react-native-safe-area-context";
-import ImageSlider from "../components/ImageSlider";
 
 export default function home() {
   return (
-    <SafeAreaView className="flex-1 bg-whit flex space-y-5" edges={["top"]}>
+    <SafeAreaView className="flex-1 bg-white flex space-y-5" edges={["top"]}>
       <StatusBar style="dark" />
 
       {/* slogan y el avatar*/}
@@ -49,7 +48,7 @@ export default function home() {
 
       {/**Aqui nuestro carrusel */}
       <View>
-        <ImageSlider />
+        <Text style = {{textAlign: "center"}}>carrusel</Text>
       </View>
     </SafeAreaView>
   );

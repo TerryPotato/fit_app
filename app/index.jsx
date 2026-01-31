@@ -2,8 +2,8 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import {
-    heightPercentageToDP as hp,
-    widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+  widthPercentageToDP as wp,
 } from "react-native-responsive-screen";
 import { StatusBar } from "react-native-web";
 import "../global.css";
@@ -41,7 +41,7 @@ export default function index() {
         </View>
         <View>
           <TouchableOpacity
-            onPress={() => router.push("home")}
+            onPress={() => router.push("/home")}
             style={{ height: hp(7), width: wp(80) }}
             className="bg-rose-500 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200"
           >
